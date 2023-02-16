@@ -1,7 +1,16 @@
 module.exports = {
-  arrowParens: 'avoid',
-  bracketSameLine: false,
+  printWidth: 100,
+  trailingComma: 'es5',
+  tabWidth: 2,
+  semi: true,
   singleQuote: true,
-  trailingComma: 'all',
-  semi: false,
-}
+  bracketSpacing: true,
+  jsxBracketSameLine: false,
+  arrowParens: 'always',
+  endOfLine: 'auto',
+  jsxSingleQuote: true,
+  proseWrap: 'preserve',
+  quoteProps: 'as-needed',
+  useTabs: false,
+  htmlWhitespaceSensitivity: 'css',
+};
