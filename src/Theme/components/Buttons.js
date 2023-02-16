@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 
 export default function ({ Colors, Gutters, Layout }) {
   const base = {
@@ -6,11 +6,11 @@ export default function ({ Colors, Gutters, Layout }) {
     ...Gutters.largeHPadding,
     height: 40,
     backgroundColor: Colors.primary,
-  }
+  };
   const rounded = {
     ...base,
     borderRadius: 20,
-  }
+  };
 
   return StyleSheet.create({
     base,
@@ -27,5 +27,5 @@ export default function ({ Colors, Gutters, Layout }) {
       borderWidth: 2,
       borderColor: Colors.primary,
     },
-  })
+  });
 }

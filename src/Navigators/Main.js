@@ -1,15 +1,11 @@
-import React from 'react'
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import {
-  ExampleContainer,
-  LoginContainer,
-  RegisterContainer,
-} from '@/Containers'
+import React from 'react';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { ExampleContainer, LoginContainer, RegisterContainer } from '@/Containers';
 
-const Tab = createBottomTabNavigator()
+const Tab = createBottomTabNavigator();
 
 // @refresh reset
-const MainNavigator = () => {
+function MainNavigator() {
   return (
     <Tab.Navigator>
       <Tab.Screen
@@ -37,7 +33,7 @@ const MainNavigator = () => {
         }}
       />
     </Tab.Navigator>
-  )
+  );
 }
 
-export default MainNavigator
+export default MainNavigator;

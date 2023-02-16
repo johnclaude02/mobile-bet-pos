@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 
 /**
  *
@@ -105,5 +105,5 @@ export default function () {
     rotate90Inverse: {
       transform: [{ rotate: '-90deg' }],
     },
-  })
+  });
 }
