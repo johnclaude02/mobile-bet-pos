@@ -4,18 +4,15 @@
  *
  * You can add other navigation functions that you need and export them
  */
-import {
-  CommonActions,
-  createNavigationContainerRef,
-} from '@react-navigation/native'
+import { CommonActions, createNavigationContainerRef } from '@react-navigation/native';
 
-export const navigationRef = createNavigationContainerRef()
+export const navigationRef = createNavigationContainerRef();
 
 export const navigate = (name, params) => {
   if (navigationRef.isReady()) {
-    navigationRef.navigate(name, params)
+    navigationRef.navigate(name, params);
   }
-}
+};
 
 export const navigateAndReset = (routes = [], index = 0) => {
   if (navigationRef.isReady()) {
@@ -24,9 +21,9 @@ export const navigateAndReset = (routes = [], index = 0) => {
         index,
         routes,
       }),
-    )
+    );
   }
-}
+};
 
 export const navigateAndSimpleReset = (name, index = 0) => {
   if (navigationRef.isReady()) {
@@ -35,6 +32,6 @@ export const navigateAndSimpleReset = (name, index = 0) => {
         index,
         routes: [{ name }],
       }),
-    )
+    );
   }
-}
+};

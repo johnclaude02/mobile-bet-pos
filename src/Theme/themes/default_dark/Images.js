@@ -7,5 +7,5 @@ export default function () {
     logo: {
       uri: 'https://thecodingmachine.github.io/react-native-esabong/img/TOM-small.png',
     },
-  }
+  };
 }

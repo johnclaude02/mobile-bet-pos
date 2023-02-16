@@ -8,6 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint src/**/*.{js,jsx} --fix",
+    "prettier": "prettier --write .",
     "type-check": "tsc"
   },
   "dependencies": {
